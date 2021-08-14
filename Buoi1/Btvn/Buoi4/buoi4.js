@@ -107,29 +107,29 @@
 
 //Write a script to store and process the learning tasks to become a front-end developer
 
-let Store=[
+let Store = [
     {
-        index:1,
+        index: 1,
         Learn: "HTML",
         Complete: false
     },
     {
-        index:2,
+        index: 2,
         Learn: "CSS",
         Complete: false
     },
     {
-        index:3,
+        index: 3,
         Learn: "Js",
         Complete: false
     },
     {
-        index:4,
+        index: 4,
         Learn: "Node Package Manager",
         Complete: false
     },
     {
-        index:5,
+        index: 5,
         Learn: "Git",
         Complete: false
     }
@@ -137,64 +137,65 @@ let Store=[
 ]
 
 //Print it out
-for(let i=0;i<Store.length;i++){
+for (let i = 0; i < Store.length; i++) {
     console.table(Store[i]);
 }
 
 //Let users add new task
-let tasks=prompt("New/Delete/Update/Complete/ComeBack")
-while(true){
-    if(tasks==="New"){
-        let nameLearn=prompt("Thêm môn học ms: ");
-        let newLearn={
-          Learn: nameLearn,
-          Complete:false
+let tasks = prompt("New/Delete/Update/Complete/ComeBack")
+while (true) {
+    if (tasks === "New") {
+        let nameLearn = prompt("Thêm môn học ms: ");
+        let newLearn = {
+            index:Store.length+1,
+            Learn: nameLearn,
+            Complete: false
         };
         Store.push(newLearn);
-        for(let i=0;i<Store.length;i++){
+        for (let i = 0; i < Store.length; i++) {
             console.table(Store[i]);
         }
         break;
-    }else if(tasks==="Delete"){
-        let indexDelete=Number(prompt("Vị trí bạn muốn xóa: "));
-        for(let i=0;i<Store.length;i++){
-            if(Store[i].index===indexDelete){
-                Store.splice(i,1);
+    } else if (tasks === "Delete") {
+        let indexDelete = Number(prompt("Vị trí bạn muốn xóa: "));
+        for (let i = 0; i < Store.length; i++) {
+            if (Store[i].index === indexDelete) {
+                Store.splice(i, 1);
             }
         }
-        
-        for(let i=0;i<Store.length;i++){
+
+        for (let i = 0; i < Store.length; i++) {
             console.table(Store[i]);
         }
         break;
-    }else if(tasks==="Update"){
-        let edit=Number(prompt("Nhập vị trí cần sửa: "));
-        let newName=prompt("Tên sửa: ");
-        for(let i=0;i<Store.length;i++){
-            if(Store[i].index===edit){
-              Store[i].Learn=newName;
+    } else if (tasks === "Update") {
+        let edit = Number(prompt("Nhập vị trí cần sửa: "));
+        let newName = prompt("Tên sửa: ");
+        for (let i = 0; i < Store.length; i++) {
+            if (Store[i].index === edit) {
+                Store[i].Learn = newName;
             }
         }
-        for(let i=0;i<Store.length;i++){
+        for (let i = 0; i < Store.length; i++) {
             console.table(Store[i]);
         }
         break;
-    }else if(tasks==="Complete"){
-        let completes=Number(prompt("Nhập vị trí cần hoàn hòan thiện: "));
-        for(let i=0;i<Store.length;i++){
-          if(Store[i].index===completes){
-              Store[i].Complete=true;
-          }
+    } else if (tasks === "Complete") {
+        let completes = Number(prompt("Nhập vị trí cần hoàn hòan thiện: "));
+        for (let i = 0; i < Store.length; i++) {
+            if (Store[i].index === completes) {
+                Store[i].Complete = true;
+            }
         }
-        for(let i=0;i<Store.length;i++){
+        for (let i = 0; i < Store.length; i++) {
             console.table(Store[i]);
         }
-       
-    }else if(tasks==="ComeBack"){
+        break;
+    } else if (tasks === "ComeBack") {
         alert(tasks);
-    }else if(input === "0"){
-        false
-    }else{
-        alert("Sai r")
+    } else if (input === "0") {
+        false;
+    } else {
+        alert("Sai r");
     }
 }
