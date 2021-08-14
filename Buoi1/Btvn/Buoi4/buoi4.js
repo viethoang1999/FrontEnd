@@ -142,7 +142,7 @@ for(let i=0;i<Store.length;i++){
 }
 
 //Let users add new task
-let tasks=prompt("New/Delete/Update/Complete")
+let tasks=prompt("New/Delete/Update/Complete/ComeBack")
 while(true){
     if(tasks==="New"){
         let nameLearn=prompt("Thêm môn học ms: ");
@@ -189,6 +189,12 @@ while(true){
         for(let i=0;i<Store.length;i++){
             console.table(Store[i]);
         }
-        break;
+       
+    }else if(tasks==="ComeBack"){
+        alert(tasks);
+    }else if(input === "0"){
+        false
+    }else{
+        alert("Sai r")
     }
 }
