@@ -1,0 +1,125 @@
+1.HTML : Hypertext Markup Languagelà ngôn ngữ đánh dấu siêu văn bản, là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web
+2.Understand the importance of HTML	
+Sử dụng HTML, bạn có thể xác định tiêu đề, đoạn văn, liên kết, hình ảnh, v.v. để trình duyệt của bạn biết cách cấu trúc trang web bạn đang xem
+3.Understand HTML Syntax:
+  <!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+4."Rearrange the code to surround the text ""I am learning HTML on FA!"" with opening and closing <p> tags:
+1. <p>
+2. I am learning HTML 
+3. </p>
+4. on FA!"	
+
++) <p> " " I am learning HTML on FA!""</p>
+
+5.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+6.
+Các <!DOCTYPE html>tuyên bố xác định rằng tài liệu này là một tài liệu HTML5
+Phần <html>tử là phần tử gốc của một trang HTML
+Phần <head>tử chứa thông tin meta về trang HTML
+Phần <title>tử chỉ định tiêu đề cho trang HTML (được hiển thị trong thanh tiêu đề của trình duyệt hoặc trong tab của trang)
+Phần <body>tử xác định phần thân của tài liệu và là vùng chứa tất cả nội dung hiển thị, chẳng hạn như tiêu đề, đoạn văn, hình ảnh, siêu liên kết, bảng, danh sách, v.v.
+Phần <h1>tử xác định một tiêu đề lớn
+Phần <p>tử xác định một đoạn văn
+
+7.
+Phần <head>tử chứa thông tin meta về trang HTML
+8.
+<html>
+  <head></head>
+</html>"	
+9.
+<body>tử xác định phần thân của tài liệu và là vùng chứa tất cả nội dung hiển thị, chẳng hạn như tiêu đề, đoạn văn, hình ảnh, siêu liên kết, bảng, danh sách, v.v.
+10.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+11.
+<html>
+<head></head>
+<body></body>
+</html>
+12.
+Phần <title>tử chỉ định tiêu đề cho trang HTML (được hiển thị trong thanh tiêu đề của trình duyệt hoặc trong tab của trang)
+<title>Page Title</title>
+13.
+Phần tử HTML được xác định bởi thẻ bắt đầu, một số nội dung và thẻ kết thúc.
+<tagname>Content goes here...</tagname>
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+14.
+Thẻ HTML <br> hay Thẻ br trong HTML được sử dụng để xuống dòng trong 1 đoạn văn. Nó là một thẻ trống, có nghĩa là không cần phải đóng thẻ.
+15.
+Thuộc tính HTML cung cấp thông tin bổ sung về các phần tử HTML.
+Tất cả các phần tử HTML có thể có các thuộc tính
+Các thuộc tính cung cấp thông tin bổ sung về các phần tử
+Các thuộc tính luôn được chỉ định trong thẻ bắt đầu
+Các thuộc tính thường có trong các cặp tên / giá trị như: name = "value"
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+16.
+Các thuộc tính luôn được chỉ định trong thẻ bắt đầu
+17.
+<img src="img_girl.jpg" width="500" height="600">
+<img src="img_girl.jpg" alt="Girl with a jacket">
+width và height là alt thuộc tính  các thuộc tính, 
+18.
+Thuộc tính size xác định chiều rộng của phần tử <input> và chiều cao của phần tử <select>. Đối với đầu vào, nếu thuộc tính type là văn bản hoặc mật khẩu thì đó là số ký tự. Đây phải là một giá trị số nguyên 0 hoặc cao hơn
+19.
+Các phần tử HTML có thể được lồng vào nhau (điều này có nghĩa là các phần tử có thể chứa các phần tử khác)
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+20.
+Phần tử cấp khối
+Một phần tử cấp khối luôn bắt đầu trên một dòng mới.
+
+Một phần tử cấp khối luôn chiếm toàn bộ chiều rộng có sẵn (trải dài sang trái và phải hết mức có thể).
+
+Phần tử cấp khối có lề trên và lề dưới, trong khi phần tử nội tuyến thì không.
+
+Phần tử nội tuyến
+Một phần tử nội tuyến không bắt đầu trên một dòng mới.
+
+Một phần tử nội tuyến chỉ chiếm nhiều chiều rộng khi cần thiết.
+21.
+Nhận xét HTML không được hiển thị trong trình duyệt, nhưng chúng có thể giúp ghi lại mã nguồn HTML
+<!-- Write your comments here -->
+Lưu ý rằng có một dấu chấm than (!) Trong thẻ bắt đầu, nhưng không có trong thẻ kết thúc.
