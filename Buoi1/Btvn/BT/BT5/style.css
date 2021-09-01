@@ -1,0 +1,33 @@
+#banner{
+    background-color: rgb(50, 58, 58);
+width: 600px;
+height: 500px;
+float: left;
+}
+h1{
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+}
+#body{
+    margin-left: 50px;
+    width: 800px;
+    height: 900px;
+    float: left;
+}
+
+b{
+    padding-top: 10px;
+    font-size: 30px;
+}
+ul{
+    list-style-type: none;
+    float: left;
+    font-size: 20px;
+    padding-top: 10px;
+
+}
+h2{
+    font-size: 40px;
+    margin-top: -10px;
+}

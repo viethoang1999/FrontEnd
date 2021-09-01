@@ -1,0 +1,44 @@
+#header{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    }
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    .content{
+        text-align: center;
+    }
+    #body{
+        width: auto;
+        height: auto;
+    }
+    .box{
+        margin-left: 120px;
+        width: 350px;
+        height: 700px;
+        float: left;
+       
+    }
+    .box1{
+     background-color:thistle;
+     width: 350px;
+     height: 300px;
+    }
+    .item{
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+    
+    }
+    .item1{
+    margin-top: 30px;
+    font-size: 20px;
+    }
+    button{
+        width: 150px;
+        height: 50px;
+    }

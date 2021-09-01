@@ -1,0 +1,20 @@
+#head{
+    width: 600px;
+    height: 500px;
+}
+.box{
+    margin-left: 10px;
+    width: 400px;
+    height: 60px;
+    float: left;
+}
+.box1{
+    margin-left: 100px;
+    width: 50px;
+    height: 60px;
+    float: left;
+    font-size: 50px;
+}
+.content{
+    margin-left: 10px;
+}

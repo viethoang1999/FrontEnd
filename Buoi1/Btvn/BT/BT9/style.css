@@ -1,0 +1,38 @@
+#head{
+    background-color: wheat;
+    width: auto;
+    height: auto;
+}
+#right{
+    margin-left:100px ;
+    width: 700px;
+    height: 250px;
+    float: left;
+}
+input{
+    width: 600px;
+    height: 40px;
+    margin-top: 20px;
+}
+select{
+    width: 608px;
+    height: 40px;
+    margin-top: 20px;  
+}
+#left{
+    width: 700px;
+    height: 250px;
+    float: left;
+}
+textarea{
+    margin-left:100px ;
+    width: 1300px;
+}
+button{
+    margin-left:100px ;
+    margin-top: 20px;
+    width: 1305px;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
