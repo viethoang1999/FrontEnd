@@ -1,0 +1,106 @@
+.head{
+width: auto;
+height: auto;
+background-color: rgb(206, 203, 203);
+}
+.imghead{
+width: 1500px;
+height: 300px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+.img1{
+    width: 1000px;
+    height: 300px;
+    
+    
+}
+
+.body{
+    position: relative;
+    width: 1500px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -190px;
+   
+}
+.box{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 250px;
+         
+}
+
+.img2{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: solid grey 5px;
+    margin-left: 65px;
+    
+}
+p{
+    margin-left: 150px;
+}
+a{
+   text-decoration: none;
+    margin-left: 125px;
+    font-size: 20px;
+    color: rgb(46, 173, 173);
+}
+.boxleft{
+    margin-top: 130px;
+}
+button{
+    border-radius: 5px;
+}
+.menu{
+    width: 1000px;
+    height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menuright{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.menuleft{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.icon{
+    margin-top: 15px;
+}
+.button-icon{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(25, 181, 253);
+font-size: 15px;
+border-radius: 10px;
+}
+.button-icon1{
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(223, 225, 226);
+    border-radius: 10px;
+}
+.button-icon2{
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(223, 225, 226);
+    border-radius: 10px;
+}
