@@ -1,0 +1,105 @@
+Overview:
+     - What is DOM?: DOM là tiêu chuẩn W3C  Element, Attribute, Text
+     - What is the mission of the Javascript DOM?
+JavaScript có thể thay đổi tất cả các phần tử HTML trong trang
+JavaScript có thể thay đổi tất cả các thuộc tính HTML trong trang
+JavaScript có thể thay đổi tất cả các kiểu CSS trong trang
+JavaScript có thể xóa các phần tử và thuộc tính HTML hiện có
+JavaScript có thể thêm các phần tử và thuộc tính HTML mới
+JavaScript có thể phản ứng với tất cả các sự kiện HTML hiện có trong trang
+JavaScript có thể tạo các sự kiện HTML mới trong trang
+      - DOM Types in Javascript ?:
+DOM document: lưu trữ toàn bộ các thành phần trong tài liệu của website.
+DOM element: truy xuất tới thẻ HTML nào đó thông qua các thuộc tính như tên class, id, name của thẻ HTML.
+DOM HTML: thay đổi giá trị nội dung và giá trị của thẻ HTML.
+DOM CSS: thay đổi các định dạng CSS của thẻ HTML.
+DOM Event: gán các sự kiện như onclick(), onload() vào các thẻ HTML.
+DOM Listener: lắng nghe các sự kiện tác động lên thẻ HTML đó.
+DOM Navigation: quản lý, thao tác với các thẻ HTML, thể hiện mối quan hệ cha – con của các thẻ HTML.
+DOM Node, Nolelist: thao tác với HTML thông qua đối tượng (Object)
+      -What is DOM manipulation?:
+Các Thuộc tính và Phương thức thường gặp
+Thuộc tính: 
+id: Định danh – là duy nhất cho mỗi phần tử nên thường được dùng để truy xuất DOM trực tiếp và nhanh chóng.
+className: Tên lớp – Cũng dùng để truy xuất trực tiếp như id, nhưng 1 className có thể dùng cho nhiều phần tử.
+tagName: Tên thẻ HTML.
+innerHTML: Trả về mã HTML bên trong phần tử hiện tại. Đoạn mã HTML này là chuỗi kí tự chứa tất cả phần tử bên trong, bao gồm các nút phần tử và nút văn bản.
+outerHTML: Trả về mã HTML của phần tử hiện tại. Nói cách khác, outerHTML = tagName + innerHTML.
+textContent: Trả về 1 chuỗi kí tự chứa nội dung của tất cả nút văn bản bên trong phần tử hiện tại.
+attributes: Tập các thuộc tính như id, name, class, href, title…
+style: Tập các định dạng của phần tử hiện tại
+value: Lấy giá trị của thành phần được chọn thành một biến.
+Phương thức:
+getElementById(id): Tham chiếu đến 1 nút duy nhất có thuộc tính id giống với id cần tìm.
+getElementsByTagName(tagname): Tham chiếu đến tất cả các nút có thuộc tính tagName giống với tên thẻ cần tìm, hay hiểu đơn giản hơn là tìm tất cả các phần tử DOM mang thẻ HTML cùng loại. Nếu muốn truy xuất đến toàn bộ thẻ trong tài liệu HTML thì hãy sử dụng document.getElementsByTagName('*').
+getElementsByName(name): Tham chiếu đến tất cả các nút có thuộc tính name cần tìm.
+getAttribute(attributeName): Lấy giá trị của thuộc tính.
+setAttribute(attributeName, value): Sửa giá trị của thuộc tính.
+appendChild(node): Thêm 1 nút con vào nút hiện tại.
+removeChild(node): Xóa 1 nút con khỏi nút hiện tại.
+Mặt khác, các phần tử DOM đều là các nút trên cây cấu trúc DOM. Chúng sở hữu thêm các thuộc tính quan hệ để biểu diễn sự phụ thuộc giữa các nút với nhau. Nhờ các thuộc tính quan hệ này, chúng ta có thể truy xuất DOM gián tiếp dựa trên quan hệ và vị trí của các phần tử:
+
+Thuộc tính quan hệ:
+parentNode: Nút cha
+childNodes: Các nút con
+firstChild: Nút con đầu tiên
+lastChild: Nút con cuối cùng
+nextSibling: Nút anh em liền kề sau
+previousSibling: Nút anh em liền kề trước
+
+      - What is DOM element?:
+Finding HTML elements by id: The easiest way to find an HTML element in the DOM, is by using the element id.
+Finding HTML elements by tag name:This example finds all <p> elements:
+const element = document.getElementsByTagName("p");
+Finding HTML elements by class name: find all HTML elements with the same class name, use getElementsByClassName().
+const x = document.getElementsByClassName("intro");
+Finding HTML elements by CSS selectors: find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the querySelectorAll() method.
+const x = document.querySelectorAll("p.intro");
+
+Finding HTML elements by HTML object collections:finds the form element with id="frm1", in the forms collection, and displays all element values:
+
+const x = document.forms["frm1"];
+let text = "";
+for (let i = 0; i < x.length; i++) {
+  text += x.elements[i].value + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+
+Basic DOM properties: What is
+.innerText?
+Get the inner text of an element:
+var x = document.getElementById("myBtn").innerText;
+textContent? This element has extra spacing    and contains a span element."
+
+innerHTML?
+Change the HTML content of a <p> element with id="demo":
+document.getElementById("demo").innerHTML = "Paragraph changed!";
+style?
+Thuộc tính style trả về đối tượng CSSStyleDec Tuyên bố, đối tượng này đại diện cho thuộc tính style của một phần tử.
+Thuộc tính style được sử dụng để lấy hoặc đặt một kiểu cụ thể của một phần tử bằng cách sử dụng các thuộc tính CSS khác nhau.
+Childrent: ?Thuộc tính children trả về một tập hợp các phần tử con của một phần tử, như một đối tượng HTMLCollection.
+ParentElement: ?:Thuộc tính parentElement trả về phần tử mẹ của phần tử được chỉ định.
+Id: ?Thuộc tính id đặt hoặc trả về id của một phần tử (giá trị của thuộc tính id của phần tử).
+classList: ?
+Thuộc tính classList trả về (các) tên lớp của một phần tử, dưới dạng một đối tượng DOMTokenList.
+Thuộc tính này hữu ích để thêm, xóa và chuyển đổi các lớp CSS trên một phần tử.
+Thuộc tính classList là chỉ đọc, tuy nhiên, bạn có thể sửa đổi nó bằng cách sử dụng các phương thức add () và remove ().
+classsList( .add, .remove) ?
+Adds one or more class names to an element.
+Removes one or more class names from an element.
+
+
+DOM methods: What is
+remove()?Các remove()phương pháp loại bỏ các yếu tố cụ thể từ DOM.
+appenChild()?Phương thức appendChild () gắn một nút làm nút con cuối cùng của một nút.
+setAttribute()?Phương thức setAttribute () thêm thuộc tính đã chỉ định vào một phần tử và cung cấp cho nó giá trị được chỉ định.
+removeAttribute?Phương thức removeAttribute () xóa thuộc tính đã chỉ định khỏi một phần tử.
+
+
+
+-        Click Event: What is 
+onclick?:
+Sự kiện onclick xảy ra khi người dùng nhấp vào một phần tử.
+
+
